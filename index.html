@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Page</title>
+  <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome6/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="font/font.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body id="body">
+
+
+  <nav class="navbar py-0 navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid inner-nav">
+      <button
+        class="navbar-toggler p-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sidebar"
+        aria-controls="offcanvasExample">
+        <span class="" data-bs-target="#sidebar"><i class="bi bi-list"></i></span>
+      </button>
+      <a class="navbar-brand ms-lg-0 ms-3 text-uppercase headerTxt">Welcome to my page</a>
+    </div>
+  </nav>
+  <div
+    class="offcanvas offcanvas-start sidebar-nav bg-dark"
+    tabindex="-1"
+    id="sidebar">
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+
+
+
+          <li>
+            <a href="#home" class="nav-link px-3 u_home">
+              <span class="me-2 text-white"><i class="bi bi-house"></i></span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#profile" class="nav-link px-3 u_profile">
+              <span class="me-2 text-white"><i class="bi bi-person-square"></i></span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#teaching" class="nav-link px-3 u_teaching">
+              <span class="me-2 text-white"><i class="fa-solid fa-person-chalkboard"></i></span>
+              <span>Teaching</span>
+            </a>
+          </li>
+          <li>
+            <a href="#publications" class="nav-link px-3 u_publications">
+              <span class="me-2 text-white"><i class="fa-solid fa-book"></i></span>
+              <span>Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#students" class="nav-link px-3 u_students">
+              <span class="me-2 text-white"><i class="fa-solid fa-graduation-cap"></i></span>
+              <span>Research Students</span>
+            </a>
+          </li>
+          <li>
+            <a href="#talks" class="nav-link px-3 u_talks">
+              <span class="me-2 text-white"><i class="bi bi-megaphone"></i></span>
+              <span>Invited Talks</span>
+            </a>
+          </li>
+          <li>
+            <a href="#review" class="nav-link px-3 u_review">
+              <span class="me-2 text-white"><i class="fas fa-microscope"></i></span>
+              <span>Reviewer Work</span>
+            </a>
+          </li>
+          <li>
+            <a href="./cv.pdf" class="nav-link px-3 u_cv">
+              <span class="me-2 text-white">
+                <i class="bi bi-file-text"></i>
+              </span>
+              <span>CV</span>
+            </a>
+          </li>
+
+
+
+
+        </ul>
+      </nav>
+    </div>
+    <div class="update_on mb-2">
+
+      <p class="time m-0 p-0 fst-italic text-white"><i class="fa-solid fa-clock"></i></p>
+      <p class="m-0 p-0 fst-italic text-white text-uppercase text-capitalize">updated on | October 08, 2026 </p>
+    </div>
+  </div>
+
+  <!-- section Home -->
+  <section class="slide one d-flex justify-content-evenly align-items-center flex-column" id="home">
+    <div class="pagename p-0 m-0">home</div>
+    <div class="content d-flex justify-content-evenly align-items-center" id="content">
+      <div class="img-wrapper" id="img-wrapper">
+        <div class="img-innerWrapper">
+          <div class="img-content"><img src="./people.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <p>Your Name</p>
+
+        <p>Designation</p>
+
+        <p>Department Name</p>
+
+        <p>Institute Name</p>
+
+        <p>Address</p>
+
+        <p><span class="fa fa-fw fa-phone"></span>&nbsp;+91 00000</p>
+
+
+        <p><span aria-hidden="true" class="fa fa-envelope"></span>&nbsp;email@gmail.com</p>
+      </div>
+
+    </div>
+    <div class="col-10 mt-md-5 research_areas">
+      <p>Research Areas: </p>
+
+      <p>
+        <font color="#0000FF"><b>Areas of Interest</b></font>: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident officiis deleniti recusandae obcaecati nesciunt, tenetur modi impedit rem vitae enim, blanditiis tempore sunt hic qui nobis deserunt voluptatem natus?.
+      </p>
+    </div>
+  </section>
+
+  <!-- section profile -->
+  <section class="slide two d-flex justify-content-center align-items-center" id="profile">
+    <div class="content d-flex justify-content-start align-items-center flex-column " id="">
+      <div class="pagename p-0 m-0">profile</div>
+      <p class="p-0 m-0 topLine topLine-profile">profile</p>
+      <hr>
+      <div class="databox waypoint" id="education">
+        <h4 class="" id=""><span>Education</span></h4>
+        <div class="d-flex justify-content-center align-items-center ol-wrapper">
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odit.</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="databox mt-5" id="experience">
+        <h4 class="" id=""><span>Professional Experience</span></h4>
+        <div class="d-flex justify-content-center align-items-center ol-wrapper">
+          <ul>
+            <li>Since December, 2015 - <i><b>Designation</b></i></li>
+            <li>2009 - November, 2015 - <i>Designation</i></li>
+            <li>2005 - September, 2009<b>:</b> <i>&nbsp;Designation</i></li>
+            <li>2001 - November, 2005: <i>&nbsp; Designation</i></li>
+            <li>March, 1999 - July, 2001: <i>Designation</i></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="databox mt-5" id="visitingposition">
+        <h4 class="" id=""><span>Research Visits</span></h4>
+        <div class="d-flex justify-content-center align-items-center ol-wrapper">
+          <ul>
+            <li>
+              <font face="Arial">Institute, USA, Dec, 2004</font>
+            </li>
+            <li>
+              <font face="Arial">Institute, Switzerland, July, 2007.</font>
+            </li>
+            <li>
+              <font face="Arial">Institute, Canada, July, 2011.</font>
+            </li>
+            <li>
+              <font face="Arial">Institute, Germany, September, 2012.</font>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="databox mt-5" id="awards">
+        <h4 class="" id=""><span>Awards</span></h4>
+        <div class="d-flex justify-content-center align-items-center ol-wrapper">
+          <ul>
+            <li>Awards1</li>
+            <li>Awards2</li>
+            <li>Awards3</li>
+            <li>Awards4</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="databox mt-5" id="adminexperience">
+        <h4 class="" id=""><span>Administrative Experience</span></h4>
+        <div class="d-flex justify-content-center align-items-center ol-wrapper">
+          <ul>
+            <li>Administrative Experience 1</li>
+            <li>Administrative Experience 3</li>
+            <li>Administrative Experience 2</li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- section teaching -->
+  <section class="slide four d-flex justify-content-start align-items-center flex-column" id="teaching">
+
+
+    <div class="content d-flex justify-content-start align-items-center flex-column " id="">
+      <div class="pagename p-0 m-0">teaching</div>
+      <p class="p-0 m-0 topLine topLine-teaching">Teaching</p>
+      <hr>
+      <h4 class="text-uppercase fst-italic mb-0 semester">Semester</h4>
+      <h4 class="text-uppercase semesterName mt-1">Semester Name</h4>
+      <h4 class="text-uppercase fst-italic mt-5 mb-1 courseInfo">course information</h4>
+      <div class="d-flex justify-content-center align-items-center flex-column my-0 course">
+        <div class="d-flex flex-md-row flex-column justify-content-between align-items-center my-0 p-0 courseDetails">
+          <span class="my-0">Course Name - xxx
+          </span>
+          <span class="my-0">Course No - 123
+          </span>
+          <span>Course Contents - <a href="#" target="_blank" class="btn btn-sm contentBtn" tabindex="-1" role="button" aria-disabled="true">CLICK</a></span>
+        </div>
+        <h4 class="text-uppercase fst-italic mt-5 classTime">Class timming</h4>
+        <div class="table-responsive timeTableWrapper">
+          <table align="center" border="1" cellpadding="1" cellspacing="1">
+            <tbody>
+              <tr>
+                <td style="text-align: center; width: 50%;">DAY</td>
+                <td style="text-align: center;">TIME</td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%;">Tuesday</td>
+                <td style="text-align: center;">5 to 5:55 PM</td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%;">Wednesday</td>
+                <td style="text-align: center;">5 to 5:55 PM</td>
+              </tr>
+              <tr>
+                <td style="text-align: center; width: 50%;">Thursday</td>
+                <td style="text-align: center;">5 to 5:55 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>&nbsp;</p>
+
+        </div>
+        <h4 class="text-uppercase fst-italic mt-3 evalPlan">Evaluation Plan</h4>
+        <div class="table-responsive timeTableWrapper">
+          <table align="center" border="1" cellpadding="1" cellspacing="1">
+            <tbody>
+              <tr>
+                <td style="text-align: center; width: 50%;">EXAMS</td>
+                <td style="text-align: center;">WEIGHTAGE</td>
+              </tr>
+              <tr>
+                <td style="width: 50%; text-align: center;">Mid-Semester</td>
+                <td style="text-align: center;">25%</td>
+              </tr>
+              <tr>
+                <td style="width: 50%; text-align: center;">End - Semester</td>
+                <td style="text-align: center;">40%</td>
+              </tr>
+              <tr>
+                <td style="width: 50%; text-align: center;">Quiz Test</td>
+                <td style="text-align: center;">20%</td>
+              </tr>
+              <tr>
+                <td style="width: 50%; text-align: center;">LAB</td>
+                <td style="text-align: center;">15%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>&nbsp;</p>
+        </div>
+        <div class="course_postgraduate w-50">
+          <p class="course_postg">Courses Taught at Postgraduate Level</p>
+
+          <p><b>Course No 1 :</b> Course Name</p>
+          <p><b>Course No 2 :</b> Course Name</p>
+          <p><b>Course No 3 :</b> Course Name</p>
+          <p><b>Course No 4 :</b> Course Name</p>
+          <p><b>Course No 5 :</b> Course Name</p>
+          <p><b>Course No 6 :</b> Course Name</p>
+          <p><b>Course No 7 :</b> Course Name</p>
+          <p><b>Course No 8 :</b> Course Name</p>
+
+
+        </div>
+
+        <div class="course_undergraduate w-50 mt-4">
+          <p class="course_underg">Courses Taught at Undergraduate Level</p>
+          <p><b>Course No 1 :</b> Course Name</p>
+          <p><b>Course No 2 :</b> Course Name</p>
+          <p><b>Course No 3 :</b> Course Name</p>
+          <p><b>Course No 4 :</b> Course Name</p>
+          <p><b>Course No 5 :</b> Course Name</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section publications -->
+  <section class="slide four d-flex justify-content-center align-items-center flex-column" id="publications">
+    <div class="content d-flex justify-content-start align-items-center flex-column">
+      <div class="pagename p-0 m-0">publications</div>
+      <p class="p-0 m-0 topLine topLine-publications">publications</p>
+      <hr>
+      <div class="publications-wrapper my-5">
+
+        <ol>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui magni, tenetur quod rerum error veniam minus sint adipisci? Ratione, sed?</li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- section students -->
+  <section class="slide five d-flex justify-content-start align-items-center flex-column" id="students">
+    <div class="content d-flex justify-content-start align-items-center flex-column">
+      <div class="pagename p-0 m-0">students</div>
+      <p class="p-0 m-0 topLine topLine-students">students</p>
+      <hr>
+      <p class="phd">Ph.D students</p>
+      <div class="phdCompleted-wrapper mt-5">
+        <p class="completed"> </p>
+
+        <p>1. Thesis Title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet!</p>
+
+        <p>&nbsp; &nbsp; Name: Student Name</p>
+
+        <p>&nbsp; &nbsp; Status: <strong>Completed, 2006</strong>.</p>
+        <p>1. Thesis Title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet!</p>
+
+        <p>&nbsp; &nbsp; Name: Student Name</p>
+
+        <p>&nbsp; &nbsp; Status: <strong>Completed, 2007</strong>.</p>
+        <p>1. Thesis Title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet!</p>
+
+        <p>&nbsp; &nbsp; Name: Student Name</p>
+
+        <p>&nbsp; &nbsp; Status: <strong>Completed, 2008</strong>.</p>
+        <p>1. Thesis Title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet!</p>
+
+        <p>&nbsp; &nbsp; Name: Student Name</p>
+
+        <p>&nbsp; &nbsp; Status: <strong>Completed, 2009</strong>.</p>
+        <p>1. Thesis Title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet!</p>
+
+        <p>&nbsp; &nbsp; Name: Student Name</p>
+
+        <p>&nbsp; &nbsp; Status: <strong>Completed, 2010</strong>.</p>
+
+
+
+      </div>
+      <div class="phdOngoing-wrapper mt-5 mb-4">
+        <p class="ongoing"> Ongoing Thesis Work </p>
+
+        <ol>
+          <li>Student Name&nbsp;(enrolled in 2020)</li>
+          <li>Student Name&nbsp;(enrolled in 2021)</li>
+        </ol>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section invited talks -->
+  <section class="slide six d-flex justify-content-start align-items-center flex-column" id="talks">
+    <div class="content d-flex justify-content-start align-items-center flex-column">
+      <div class="pagename p-0 m-0">invited talks</div>
+      <p class="p-0 m-0 topLine topLine-talks">talks</p>
+      <hr>
+      <div class="talks-wrapper mt-4">
+        <p class="completed">
+        <ol>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum?, place, year.</li>
+
+        </ol>
+
+        <p>&nbsp;</p>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- section reviewer work -->
+  <section class="slide seven d-flex justify-content-start align-items-center flex-column" id="review">
+    <div class="content d-flex justify-content-start align-items-center flex-column">
+      <div class="pagename p-0 m-0">reviewer work</div>
+      <p class="p-0 m-0 topLine topLine-review">reviewer work</p>
+      <hr>
+      <div class="review-wrapper mt-4">
+        <ol>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+
+        </ol>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <footer class="text-center text-white"> © All Rights reserved. </footer>
+
+  <script>
+    $(document).ready(function() {
+
+      $('.content-item p:nth-child(1)').addClass("fadeInDown");
+      $('.content-item p:nth-child(2)').addClass("fadeInDown");
+      $('.content-item p:nth-child(3)').addClass("fadeInLeft");
+
+
+      setTimeout(function() {
+
+        $('.content-item p:nth-child(4)').addClass("fadeInLeft");
+      }, 30);
+      setTimeout(function() {
+
+        $('.content-item p:nth-child(5)').addClass("fadeInLeft");
+      }, 50);
+
+      setTimeout(function() {
+
+        $('.content-item p:nth-child(6)').addClass("fadeInLeft");
+      }, 70);
+
+      setTimeout(function() {
+
+        $('.content-item p:nth-child(7)').addClass("fadeInLeft");
+      }, 90);
+
+      setTimeout(function() {
+
+        $('.content-item p:nth-child(8)').addClass("fadeInLeft");
+      }, 110);
+
+
+
+
+
+
+      $('.slide').click(function(event) {
+        var clickover = $(event.target);
+        var _opened = $("#navbarSupportedContent").hasClass("show");
+
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+          $("button.navbar-toggler").click();
+        }
+      });
+
+      var waypoints = $('.topLine').waypoint({
+        handler: function(direction) {
+          var name = this.element;
+          name.classList.add("tracking-out-expand");
+        },
+        offset: '80%'
+      })
+
+    })
+
+    fetch('https://timeapi.io/api/time/current/zone?timeZone=Asia/Kolkata')
+      .then(response => response.json())
+      .then(data => {
+
+        var year = (data.dayOfWeek + ', ' + data.day + ', ' + data.year)
+
+        const date = new Date(data.dateTime);
+
+        const time = date.toLocaleTimeString('en-IN', {
+          hour: 'numeric',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+        });
+
+        console.log(time);
+
+        $('.time').text(year + ' |' + time);
+
+        $.ajax({
+          url: "https://jsonplaceholder.typicode.com",
+          type: "HEAD",
+          cache: false,
+          statusCode: {
+            200: function(response) {
+              // console.log('Status 200: Page is up!');
+              $('.time').addClass('show');
+
+            },
+            400: function(response) {
+              // console.log('Status 400: Page is down.');
+              $('.time').hide();
+            },
+            0: function(response) {
+              // console.log('Status 0: Page is down.');
+              $('.time').hide();
+            }
+          },
+
+        });
+      });
+  </script>
+</body>
+
+</html>

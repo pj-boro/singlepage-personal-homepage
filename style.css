@@ -1,0 +1,906 @@
+:root {
+    --offcanvas-width: 200px;
+    --topNavbarHeight: 40px;
+}
+
+body {
+    color: #3e2c03;
+    background-image: url(bg.svg);
+
+}
+
+
+.navbar, .navbar-expand-lg {
+    height: 40px !important;
+    background-color: gray !important;
+}
+
+.inner-nav {
+    justify-content: center !important;
+
+}
+
+.sidebar-nav {
+    width: var(--offcanvas-width);
+    background-color: gray !important;
+}
+
+.offcanvas-start {
+    top: 45px !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-link .right-icon {
+    display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 10px;
+}
+
+.navbar-nav>li {
+    border-bottom: 1px solid rgb(187, 186, 186);
+}
+
+.navbar-brand {
+    cursor: default !important;
+    letter-spacing: 3px;
+    font-size: 1rem;
+
+}
+
+.bi-list {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.slide {
+    position: relative !important;
+    min-height: 100vh;
+    margin-left: var(--offcanvas-width);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    height: auto;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.img-innerWrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(235, 235, 235);
+    padding: .5rem;
+    z-index: 2;
+    border: 2px solid rgb(105, 104, 104);
+}
+
+
+
+.img-content>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.content-item {
+    width: auto;
+    height: auto;
+}
+
+.content-item p {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.content-item p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.content-item p:nth-child(3) {
+    margin-top: 1rem;
+}
+
+.content-item>p:last-child {
+    position: relative;
+}
+
+.research_areas {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.research_areas>p:first-child {
+
+    text-align: center;
+}
+
+
+
+.pagename {
+    position: absolute;
+    padding-top: 5px !important;
+    letter-spacing: 5px;
+    right: 10px;
+    top: 50%;
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(95, 94, 94);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .7rem;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.databox {
+    position: relative;
+    padding: 0.5em;
+
+    width: 50%;
+    height: auto;
+
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: 2px 41px 50px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 2px 41px 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 41px 50px rgba(0, 0, 0, 0.1);
+}
+
+
+.databox h4 {
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.databox h4>span {
+    position: relative;
+
+}
+
+.databox h4>span::before {
+    position: absolute;
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background: #3e2c03;
+    right: 0;
+    bottom: -2px;
+}
+
+#visitingposition>.ol-wrapper>ol {
+    width: 90%;
+}
+
+.courseInfo, .classTime, .evalPlan, .semester {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    padding: 0 0 0 5px;
+
+    border: 1px solid #000
+}
+
+.semesterName {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.semesterName>span:nth-child(2) {
+    margin: 0 5px;
+
+    border: 1px solid #000;
+}
+
+.course {
+    width: 100%;
+}
+
+.courseDetails {
+    position: relative;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+.courseDetails>span {
+    position: relative;
+    margin: 0 1rem;
+}
+
+
+.courseDetails>span:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.courseDetails span:nth-child(2)::before, .courseDetails span:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    border: 1px solid #fff;
+    top: 0;
+}
+
+.courseDetails span:nth-child(2)::before {
+    left: -1rem;
+}
+
+
+.courseDetails span:nth-child(2)::after {
+    right: -1rem;
+}
+
+.contentBtn {
+    background-color: rgb(236, 177, 47);
+    position: relative;
+    color: beige;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Dosis', sans-serif;
+    transition: 0.3s all ease-in;
+    z-index: 1;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+.timeTableWrapper {
+    width: 90%;
+}
+
+.timeTableWrapper>table {
+    margin: 0 auto !important;
+    width: 500px;
+}
+
+.timeTableWrapper>table>tbody>tr>td {
+    border: 1px solid #000;
+}
+
+ol {
+    font-size: 1rem;
+    padding-left: 0;
+}
+
+.ol-wrapper>ol {
+    margin-left: 1rem !important;
+    width: auto;
+    font-size: 1.2rem !important;
+}
+
+p.topLine {
+    margin-top: 4rem !important;
+    width: auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: #594005;
+
+}
+
+hr {
+    margin-top: .5rem;
+    width: 90%;
+    height: 2px;
+    color: #000;
+}
+
+.publications-wrapper, .phdCompleted-wrapper, .phdOngoing-wrapper, .talks-wrapper, .review-wrapper {
+    width: 85%;
+    height: auto;
+    position: relative;
+
+}
+
+.publications-wrapper>ol, .phdCompleted-wrapper>p, .phdOngoing-wrapper>ol, .talks-wrapper>ol, .review-wrapper>ol, .course_postgraduate, .course_undergraduate {
+    font-family: 'Prompt', sans-serif;
+}
+
+.publications-wrapper>ol {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.publications-wrapper>ol>li {
+    position: relative;
+    padding: 7px 0;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.phdCompleted-wrapper>ol {
+    margin-top: 1.5rem !important;
+
+
+}
+
+.phdCompleted-wrapper>ol>li {
+    position: relative;
+    padding: 7px 0;
+}
+
+
+.phd, .completed, .ongoing, .course_postg, .course_underg {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+
+    font-weight: 600;
+}
+
+.phdOngoing-wrapper>ol {
+    margin-top: 1.5rem !important;
+
+
+}
+
+
+.phdOngoing-wrapper>ol>li {
+    position: relative;
+    padding: 7px 0;
+}
+
+.talks-wrapper>ol {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.talks-wrapper>ol>li {
+    position: relative;
+    padding: 7px 0;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.review-wrapper {
+    width: auto;
+}
+
+.review-wrapper>ol>li {
+    position: relative;
+    padding: 7px 0;
+
+}
+
+
+
+p.completed {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p.ongoing {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#test {
+    height: 32px;
+    display: none;
+    width: 100%;
+}
+
+.update_on {
+
+    font-size: .8rem;
+    pointer-events: none !important;
+    cursor: pointer;
+}
+
+.time {
+    position: relative;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.time>i {
+    color: #fff;
+
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    background: grey !important;
+
+}
+
+.slide-right {
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-right {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+    }
+}
+
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+        -webkit-transform: translate3d(-20%, 0, 0);
+        -moz-transform: translate3d(-20%, 0, 0);
+        -ms-transform: translate3d(-20%, 0, 0);
+        -o-transform: translate3d(-20%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+        -webkit-transform: translate3d(-20%, 0, 0);
+        -moz-transform: translate3d(-20%, 0, 0);
+        -ms-transform: translate3d(-20%, 0, 0);
+        -o-transform: translate3d(-20%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        -moz-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        -o-transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        -moz-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        -o-transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+
+.tracking-out-expand {
+    -webkit-animation: tracking-out-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tracking-out-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes tracking-out-expand {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 7px;
+
+
+
+    }
+}
+
+@keyframes tracking-out-expand {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 7px;
+
+
+
+    }
+}
+
+
+
+/* focus in  */
+
+.text-focus-in {
+    animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        -webkit-filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        -webkit-filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .sidebar-nav {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        visibility: visible !important;
+
+        height: calc(100% - var(--topNavbarHeight));
+
+
+    }
+}
+
+
+/* small screen   */
+
+@media only screen and (max-width: 992px) {
+    .navbar-brand, footer {
+        font-size: .7rem;
+    }
+
+    footer {
+        padding: 0 .5rem;
+    }
+
+    .slide {
+
+        margin-left: 0 !important;
+    }
+
+    .pagename {
+        text-align: center;
+        font-size: .4rem;
+        right: 3px;
+    }
+
+    p.topLine {
+        font-size: 1.5rem;
+        margin-top: 2.5rem !important;
+
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .content-item {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .content-item p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .databox {
+        width: 90%;
+    }
+
+    .ol-wrapper>ol {
+        font-size: 1rem !important;
+    }
+
+    ol {
+        font-size: .9rem;
+    }
+
+    .publications-wrapper, .phdCompleted-wrapper, .phdOngoing-wrapper, .talks-wrapper, .review-wrapper {
+        width: 95%;
+        padding-left: 1.2rem;
+    }
+
+
+
+    .courseDetails span:nth-child(2)::before, .courseDetails span:nth-child(2)::after {
+        display: none;
+    }
+
+    #topBar {
+        display: none;
+    }
+
+    #name {
+        font-size: 1.3rem;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #logobox {
+        padding-top: 15px;
+    }
+
+    .img-wrapper {
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+    }
+
+    .imgwrapper {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 95%;
+        height: 500px;
+    }
+
+    .profileBox {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .imgHolder {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .imgHolder #photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .details>p {
+        line-height: 1.8rem;
+    }
+
+    .contents {
+        margin-top: 3rem;
+    }
+
+    .contents h3 {
+        margin-left: 0;
+    }
+
+    .contents ul {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .semesterName {
+        font-size: 1rem;
+    }
+
+    .timeTableWrapper>table {
+        width: 400px;
+    }
+
+    .contentBtn {
+        height: 1.5rem;
+        line-height: 1rem;
+        font-size: .8rem;
+    }
+
+    .course_postgraduate, .course_undergraduate {
+        width: 90% !important;
+    }
+
+}

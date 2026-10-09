@@ -1,0 +1,43 @@
+.wrapper{
+    height: 100vh;
+}
+.content{
+    position: relative;
+    /* width: 400px;*/
+    height: 350px; 
+    /* padding: 6rem; */
+    background: #bda78b;
+    color: #eceaea;
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 10px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 25px -4px rgba(0,0,0,0.75);
+
+}
+body{
+    background: #be9269;
+}
+.errNo{
+    font-family: 'Poppins', sans-serif;
+}
+.err{
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.errmsg{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.content>a{
+    position: absolute;
+    bottom: 1rem;
+}
+.btn{
+    width: 5rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
