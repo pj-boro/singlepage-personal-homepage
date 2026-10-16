@@ -94,7 +94,7 @@
             </a>
           </li>
           <li>
-            <a href="./cv.pdf" class="nav-link px-3 u_cv">
+            <a href="./cv.pdf" target="_blank" class="nav-link px-3 u_cv">
               <span class="me-2 text-white">
                 <i class="bi bi-file-text"></i>
               </span>
@@ -110,8 +110,8 @@
     </div>
     <div class="update_on mb-2">
 
-      <p class="time m-0 p-0 fst-italic text-white"><i class="fa-solid fa-clock"></i></p>
-      <p class="m-0 p-0 fst-italic text-white text-uppercase text-capitalize">updated on | October 08, 2026 </p>
+      <p class="time m-0 p-0 ps-1 fst-italic text-white"><i class="fa-solid fa-clock"></i></p>
+      <p class="m-0 p-0 ps-1 fst-italic text-white text-uppercase text-capitalize">updated on | October 08, 2026 </p>
     </div>
   </div>
 
@@ -547,13 +547,11 @@
         const time = date.toLocaleTimeString('en-IN', {
           hour: 'numeric',
           minute: '2-digit',
-          second: '2-digit',
           hour12: true
         });
 
-        console.log(time);
 
-        $('.time').text(year + ' |' + time);
+        $('.time').html(year + ' |&nbsp;&nbsp;' + time);
 
         $.ajax({
           url: "https://jsonplaceholder.typicode.com",
